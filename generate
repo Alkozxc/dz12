@@ -30,8 +30,7 @@ def generate_passwords(n):
             passwords.append(p)
     return passwords
 
-# Основная часть: генерация и вывод
-if name == "main":
+if __name__ == "__main__":
     n = int(input("Сколько паролей сгенерировать? "))
     passwords = generate_passwords(n)
     for pwd in passwords:
